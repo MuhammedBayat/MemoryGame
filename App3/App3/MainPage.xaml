@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App3"
+             x:Class="App3.MainPage"
+             >
+    <StackLayout Orientation="Vertical">
+
+
+        <Grid HeightRequest="400" x:Name="GRDRESİMLER">
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+
+            <Image x:Name="Picture1"  Aspect="AspectFill"  Grid.Row="0" Grid.Column="0">
+
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="Picture1_Tapped"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+
+
+            <Image x:Name="Picture2"  Aspect="AspectFill"  Grid.Row="0" Grid.Column="1">
+
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="Picture2_Tapped"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image x:Name="Picture3"  Aspect="AspectFill"  Grid.Row="0" Grid.Column="2">
+
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="Picture3_Tapped"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+
+
+            <Image x:Name="Picture4"  Aspect="AspectFill"  Grid.Row="1" Grid.Column="0">
+
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="Picture4_Tapped"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image x:Name="Picture5"  Aspect="AspectFill"  Grid.Row="1" Grid.Column="1">
+
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="Picture5_Tapped"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image x:Name="Picture6"  Aspect="AspectFill"  Grid.Row="1" Grid.Column="2">
+
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="Picture6_Tapped"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+        </Grid>
+        <Button x:Name="btnSifirla" Text="Sifirla" Clicked="btnSifirla_Clicked"></Button>
+
+        <Image BackgroundColor="White" HeightRequest="100"></Image>
+        <Label x:Name="lbls" Text="ss"></Label>
+        <Label x:Name="lbldizi" Text="ss"></Label>
+        <Label x:Name="lblSecilen1" Text="ss"></Label>
+        <Label x:Name="lblSecilen2" Text="ss"></Label>
+
+    </StackLayout>
+</ContentPage>
